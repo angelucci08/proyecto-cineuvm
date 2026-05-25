@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f9; text-align: center; }
+      nav a { margin: 10px; padding: 10px 20px; background: #e67e22; color: white; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold; }
+      nav a:hover { background: #d35400; }
+    </style>
+  </head>
+  <body>
+    <h1>🎬 <%= title %></h1>
+    <p>Bienvenido al Sistema de Gestión de Cine. Seleccione una sección para visualizar los datos:</p>
+    <hr>
+    <nav>
+      <a href="/view/peliculas">Ver Películas</a>
+      <a href="/view/salas">Ver Salas</a>
+      <a href="/view/funciones">Ver Funciones</a>
+      <a href="/view/reservaciones">Ver Reservaciones</a>
+    </nav>
+  </body>
+</html>

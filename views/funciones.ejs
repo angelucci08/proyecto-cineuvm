@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Funciones Programadas</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #16a085; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .btn-volver { display: inline-block; margin-bottom: 20px; padding: 8px 15px; background: #7f8c8d; color: white; text-decoration: none; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <a href="/" class="btn-volver">⬅ Volver al Menú</a>
+    <h2>🗓 Horarios y Funciones Asignadas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID Función</th>
+                <th>Película</th>
+                <th>Sala asignada</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% funciones.forEach(function(f) { %>
+                <tr>
+                    <td><%= f.id %></td>
+                    <td><strong><%= f.pelicula %></strong></td>
+                    <td><%= f.sala %></td>
+                    <td><%= f.fecha %></td>
+                    <td><%= f.hora %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
