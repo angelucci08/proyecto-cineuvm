@@ -116,3 +116,5 @@ class FuncionController {
 }
 
 module.exports = new FuncionController();
+
+// Fin del archivo de controlador de funciones - UVM

@@ -110,3 +110,5 @@ class PeliculaController {
 }
 
 module.exports = new PeliculaController();
+
+// Fin del archivo de controlador de peliculas - UVM 

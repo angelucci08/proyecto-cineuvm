@@ -12,3 +12,5 @@ router.delete('/:id', funcionController.eliminar);
 router.delete('/:id/romper-pelicula', funcionController.eliminarRelacionPelicula); // Endpoint romper lazo
 
 module.exports = router;
+
+// Fin del archivo de rutas de funciones - UVM
